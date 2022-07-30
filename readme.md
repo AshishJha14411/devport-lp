@@ -7,7 +7,7 @@ This is a sample page. The website focuses on implementing the basics of HTML an
 
 ### The deployed Version Link
 
-[Product Designer Landing Page]()
+[Product Designer Landing Page](https://productdesignlp.netlify.app/)
 
 ### SnapShot of the Webpage
 
