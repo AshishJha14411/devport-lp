@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Montserrat';
+}
+body{
+    background-color: #111111;
+    color: white;
+}
+/* 
+<---NavBar--->
+ */
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: rgb(218, 218, 218);
+}
+.navbar{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items{
+    padding-right: 10rem;
+    display: flex;
+    width: 40rem;
+    justify-content: space-between;
+}
+.nav-item a{
+    color: white;
+}
+body > div > div > .nav-items > li:nth-child(1) > a::after{
+    content: " ";
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+    border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid rgb(255, 255, 255);
+
+}
+body > div > div > ul > li:nth-child(5) > a::after{
+    content: " ";
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+    border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 10px solid rgb(255, 255, 255);
+
+}
+img[alt=logo]{
+    margin-top: -.5rem;
+    transform: scale(.6);
+    filter: invert(38%) sepia(50%) saturate(5779%) hue-rotate(336deg) brightness(104%) contrast(112%);
+}
+/* 
+<---Main--->
+ */
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 4rem 0rem 4rem;
+}
+.intro{
+    display: flex;
+    height: 30rem;
+    padding-bottom: 5rem;
+}
+.intro-img{
+    padding-left: 2rem;
+    
+}
+img[alt=guy]{
+    margin-top: -4em;
+    width: 35rem;
+}
+/* 
+<---Intro Text--->
+*/
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    
+    justify-content: center;
+}
+.name-text{
+    font-size: 20px;
+    color: #C91B28;
+}
+.designation{
+    font-size: 60px;
+}
+.description{
+    width: 35rem;
+    padding-bottom: 2rem;
+}
+.about-me{
+    width: 9rem;
+    padding: .9rem 1rem;
+    background-color: #C91B28;
+    color: white;
+}
+.backshadow{
+    z-index: 1;
+    position: absolute;
+    width: 45rem;
+    left: 0;
+    margin: 31.5rem 0 0 0rem ;
+    height: 50rem;
+    background-color: #181818;
+}
+.cards{
+    display: flex;
+    justify-content: flex-start;
+    height: 30rem;
+    width: 70vw;
+    z-index: 2;
+    padding: 1rem 4rem 0rem 15rem;
+    margin-bottom: -5rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0rem 2rem 2rem 2rem;
+    height: 18rem;
+    overflow: hidden;
+    width: 14rem;
+    margin-right: 1rem;
+    background-color: #1E1E1E;
+}
+img[alt=tab]{
+    width: 10rem;
+    margin-left: -2rem;
+    padding-bottom: 1rem;
+}
+img[alt=note]{
+    width: 10rem;
+    margin-left: -2rem;
+    padding-bottom: 2rem;
+}
+img[alt=rule]{
+    width: 10rem;
+    margin-left: -2rem;
+    margin-top: -1.5rem;
+    padding-bottom: 2rem;
+}
+.card-head{
+    margin-top: -3rem;
+    padding: 1rem 1rem 0rem 0;
+}
+.card-des{
+    padding: 1rem 1rem 1rem 0;
+}
+.know-more{
+    color: #C91B28;
+}
+.link{
+    display: flex;
+}
+.arrow{
+    position: relative;
+    margin-top: .4rem;
+    margin-left: .4rem;
+    width: 1rem;
+    height: 2px;
+    background-color: #C91B28;
+}
+body > div.main > div.cards > div.card.mid > div.link > div{
+    background-color: white;
+}
+body > div.main > div.cards > div.card.mid > div.link > div::before{
+    background-color: #fff;
+}
+body > div.main > div.cards > div.card.mid > div.link > div::after{
+    background-color: #fff;
+}
+.arrow::before{
+    content: "";
+    display: inline-block;
+    margin-top: -.16rem;
+    margin-left: .6rem;
+    width: .6rem;
+    height: 2px;
+    background-color: #C91B28;
+    transform: rotate(45deg);
+    position: absolute;
+
+}
+.arrow::after{
+    content: "";
+    display: inline-block;
+    margin-top: .18rem;
+    margin-left: .6rem;
+    width: .6rem;
+    height: 2px;
+    background-color: #C91B28;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+
+.mid{
+    color: #ffffff;
+    background-color:#C91B28
+}
+.numbers{
+    z-index: 2;
+    display: flex;
+    width: 80%;
+    margin-left: 10rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 7rem;
+}
+.bigtext{
+    padding-top: 3rem;
+}
+.bignum{
+    color: #C91B28;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 900;
+    margin-left: -4rem;
+}
+.bigtext h3{
+    font-size: 27px;
+    width: 19rem;
+    font-weight: 700;
+    margin-left: -4rem;
+    padding-left: 4rem;
+}
+.small-cards{
+    margin-left: -6rem;
+}
+.card-pair{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 50rem;
+}
+.small-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 3rem;
+    width: 10rem;
+    height: 5rem;
+    margin: .9rem;
+    justify-content: center;
+    background-color: #1E1E1E;
+}
+.num{
+    color: #C91B28;
+}
+.num-des{
+    color: rgb(182, 175, 175);
+}
+.feature-head{
+    padding-left: 10rem;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+}
+.project-head{
+    font-size: 40px;
+    padding-bottom: 1rem;
+}
+.feature-head .about-me{
+    height: 3rem;
+}
+.projects{
+    padding: 5rem 4rem 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+}
+.project-pair{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.project{
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+img[alt=first]{
+    height: 20rem;
+    width: 32rem;
+}
+
+.project-img{
+    padding: 3rem 1rem;
+    background-color: #1E1E1E;
+}
+.project-name{
+    padding: 1rem 0 1rem 0rem;
+}
+.ending-text{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    width: 73vw;
+    background-color: #1E1E1E;
+
+}
+.bigtext{
+    padding: 2rem 4rem;
+    font-size: 40px;
+}
+
+.just-text{
+    width: 50rem;
+}
+.just-text p {
+    padding: 0rem 4rem 2rem 4rem;
+}
+.ending-text .about-me{
+    margin-top: 5rem;
+    margin-right: 9rem;
+    height: 3rem;
+}
+.bot-nav-list{
+    display: flex;
+    justify-content: space-around;
+    width: 40rem;
+    padding: 4rem;
+    margin-left: 20rem;
+    color: #b9b6b6;
+}
+.nav-it{
+    font-size: 12px;
+    font-weight: 900;
+
+}
+footer{
+    position: absolute;
+    z-index: 8;
+    bottom: -160rem;
+    height: 8rem;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1E1E1E
+}
+.logob{
+    padding: 3rem 0 0 12rem;
+}
+.socials{
+    padding-left: 20rem;
+    padding-top: 3rem;
+}
+footer img {
+    width: 9rem;
+    height: 3rem;
+    margin-right: 2rem;
+}
+img[alt=fb]{
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(347deg) brightness(106%) contrast(101%);
+}
+img[alt=tw]{
+    
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(347deg) brightness(106%) contrast(101%);
+}
+img[alt=yt]{
+    
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100%) sepia(12%) saturate(2%) hue-rotate(347deg) brightness(106%) contrast(101%);
+}
+li a:hover{
+    color: #C91B28;
+}
+button:hover{
+    transition: ease-in .2s;
+    background-color: #fff;
+    color: #C91B28;
+
+}
