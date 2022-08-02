@@ -440,7 +440,7 @@ button:hover{
  .nav-items{
     display: flex;
     width: 15rem;
-    margin-left: 9rem;
+    margin-left: 0rem;
     flex-direction: column;
     align-items: center;
  }
@@ -454,6 +454,7 @@ button:hover{
  }
  .intro{
     flex-wrap: wrap;
+    padding-top: 5rem;
  }
  img[alt=guy]{
     margin-top: .1rem;
@@ -462,7 +463,6 @@ button:hover{
 
  }
  .intro-text{
-    padding-top: 1rem;
     width: 20rem;
     z-index: 2;
  }
@@ -494,6 +494,7 @@ button:hover{
     flex-wrap: wrap;
     padding: 0;
     margin-top: 5rem;
+    margin-left: 9rem;
  }
  .card{
     flex-wrap: wrap;
@@ -502,7 +503,7 @@ button:hover{
     width: 17rem;
     height: 8rem;
     font-size: .5rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
  }
  .textcard{
     display: flex;
@@ -533,20 +534,20 @@ button:hover{
  .numbers{
     margin-top: 5rem;
     font-size: 1rem;
-    padding: 0;
-    margin-left: 0;
     flex-wrap: wrap;
- }
+    margin-right: -30rem;
+}
  
  .bignum{
     font-size: 5rem;
  }
- .small-cards{
-    margin: 0;
-    padding: 0;
-    margin-left: -7rem;
+ .bigtext{
+    margin-left: -5rem;
  }
- .card-pair{
+ .small-cards{
+    margin-right: -10rem;
+}
+.card-pair{
     width: 35rem;
  }
 .feature{
@@ -578,7 +579,8 @@ button:hover{
     margin-bottom: 0;
 }
 .ending-text{
-    margin: 0;
+    width: 30rem;
+    border: 1px solid red;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -598,18 +600,13 @@ body > div.main > div.ending-text > div > p{
     margin: 4rem 1rem 4rem 1rem;
     padding: 1rem 1rem;
     width: 30rem;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.bigtext{
+    margin-left: 0;
 }
 footer{
-    display: flex;
-    flex-direction: column;
-    bottom: 0;
-    height: 7rem;
-    padding-bottom: 1rem;
-    margin-bottom: -254rem;
-}
-.socials{
-    padding-left: 12rem;
+    position: relative;
 }
 
 }
