@@ -375,7 +375,7 @@ img[alt=first]{
 footer{
     position: absolute;
     z-index: 8;
-    bottom: -150rem;
+    bottom: -170rem;
     height: 8rem;
     width: 100vw;
     display: flex;
