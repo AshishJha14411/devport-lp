@@ -19,7 +19,7 @@ li{
 }
 a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: .9rem;
     font-family: 'Montserrat';
     font-weight: 600;
     color: rgb(218, 218, 218);
@@ -69,6 +69,7 @@ img[alt=logo]{
 .main{
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 0rem 4rem 0rem 4rem;
 }
 .intro{
@@ -95,11 +96,11 @@ img[alt=guy]{
     justify-content: center;
 }
 .name-text{
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #C91B28;
 }
 .designation{
-    font-size: 60px;
+    font-size: 1.8rem;
 }
 .description{
     width: 35rem;
@@ -177,6 +178,15 @@ img[alt=rule]{
     height: 2px;
     background-color: #C91B28;
 }
+.arrow-mid{
+    
+    position: relative;
+    margin-top: .4rem;
+    margin-left: .4rem;
+    width: 1rem;
+    height: 2px;
+    background-color: #ffffff;
+}
 body > div.main > div.cards > div.card.mid > div.link > div{
     background-color: white;
 }
@@ -209,6 +219,28 @@ body > div.main > div.cards > div.card.mid > div.link > div::after{
     transform: rotate(-45deg);
     position: absolute;
 }
+.arrow-mid::before{
+    content: "";
+    display: inline-block;
+    margin-top: -.16rem;
+    margin-left: .6rem;
+    width: .6rem;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.arrow-mid::after{
+    content: "";
+    display: inline-block;
+    margin-top: .18rem;
+    margin-left: .6rem;
+    width: .6rem;
+    height: 2px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+    position: absolute;
+}
 
 .mid{
     color: #ffffff;
@@ -229,12 +261,12 @@ body > div.main > div.cards > div.card.mid > div.link > div::after{
 .bignum{
     color: #C91B28;
     text-align: center;
-    font-size: 100px;
+    font-size: 3.25rem;
     font-weight: 900;
     margin-left: -4rem;
 }
 .bigtext h3{
-    font-size: 27px;
+    font-size: 1.5rem;
     width: 19rem;
     font-weight: 700;
     margin-left: -4rem;
@@ -273,7 +305,7 @@ body > div.main > div.cards > div.card.mid > div.link > div::after{
     justify-content: space-between;
 }
 .project-head{
-    font-size: 40px;
+    font-size: 1.5rem;
     padding-bottom: 1rem;
 }
 .feature-head .about-me{
@@ -308,14 +340,13 @@ img[alt=first]{
 .ending-text{
     display: flex;
     justify-content: space-between;
-    margin-left: 10rem;
     width: 73vw;
     background-color: #1E1E1E;
 
 }
 .bigtext{
     padding: 2rem 4rem;
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 
 .just-text{
@@ -334,18 +365,17 @@ img[alt=first]{
     justify-content: space-around;
     width: 40rem;
     padding: 4rem;
-    margin-left: 20rem;
     color: #b9b6b6;
 }
 .nav-it{
-    font-size: 12px;
+    font-size: .9rem;
     font-weight: 900;
 
 }
 footer{
     position: absolute;
     z-index: 8;
-    bottom: -160rem;
+    bottom: -150rem;
     height: 8rem;
     width: 100vw;
     display: flex;
@@ -389,4 +419,587 @@ button:hover{
     background-color: #fff;
     color: #C91B28;
 
+}
+
+@media (max-width: 576px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img[alt=logo]{
+        width: 10rem;
+        margin: 0;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ }
+ .nav-items{
+    display: flex;
+    width: 15rem;
+    margin-left: 9rem;
+    flex-direction: column;
+    align-items: center;
+ }
+ .nav-item{
+    padding-top: .1rem;
+ }
+ .nav-item a{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-size: .6rem;
+ }
+ .intro{
+    flex-wrap: wrap;
+ }
+ img[alt=guy]{
+    margin-top: .1rem;
+    padding: 0 0 0 0rem;
+    width: 25rem;
+
+ }
+ .intro-text{
+    padding-top: 1rem;
+    width: 20rem;
+    z-index: 2;
+ }
+ .name-text{
+    padding-left: 2rem;
+    font-size: 1rem;
+ }
+ .designation{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+ }
+ .description{
+    font-size: .5rem;
+    width: 17rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+ }
+ .about-me{
+    margin: 0 2rem;
+    padding: 0;
+    width: 5rem;
+    height: 2rem;
+    font-size: .4rem;
+ }
+ .backshadow{
+    width: 20rem;
+ }
+ .cards{
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 5rem;
+ }
+ .card{
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 1rem;
+    width: 17rem;
+    height: 8rem;
+    font-size: .5rem;
+    margin-bottom: .5rem;
+ }
+ .textcard{
+    display: flex;
+    flex-direction: column;
+ }
+ .card-head{
+    margin-top: 1rem;
+ }
+ .card-des{
+    width: 7rem;
+ }
+ .know-more{
+    font-size: .6rem;
+ }
+ .arrow{
+    margin-top: .3rem;
+    transform: scale(.6);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div{
+    background: rgb(255, 255, 255);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div::after{
+    background: rgb(255, 255, 255);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div::before{
+    background: rgb(255, 255, 255);
+ }
+ .numbers{
+    margin-top: 5rem;
+    font-size: 1rem;
+    padding: 0;
+    margin-left: 0;
+    flex-wrap: wrap;
+ }
+ 
+ .bignum{
+    font-size: 5rem;
+ }
+ .small-cards{
+    margin: 0;
+    padding: 0;
+    margin-left: -7rem;
+ }
+ .card-pair{
+    width: 35rem;
+ }
+.feature{
+    margin: 0;
+    padding: 0;
+    width: 35rem;
+}
+.feature-head{
+    padding: 1rem;
+    width: 100%;
+}
+.textfea{
+    width: 20rem;
+}
+.feature-head button{
+    width: 7rem;
+    margin-top: 1.5rem;
+    font-size: .7rem;
+    
+}
+.projects{
+    padding: 0;
+}
+.project-pair{
+    flex-wrap: wrap;
+}
+.project{
+    transform: scale(.9);
+    margin-bottom: 0;
+}
+.ending-text{
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.just-text{
+    width: 100%;
+    margin-bottom: -5rem;
+}
+body > div.main > div.ending-text > div > p{
+}
+.ending-text button{
+    width: 10rem;
+    margin-left: 4rem;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+.bot-nav-list{
+    margin: 4rem 1rem 4rem 1rem;
+    padding: 1rem 1rem;
+    width: 30rem;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    height: 7rem;
+    padding-bottom: 1rem;
+    margin-bottom: -254rem;
+}
+.socials{
+    padding-left: 12rem;
+}
+
+}
+@media (max-width: 768px){
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    img[alt=logo]{
+        width: 10rem;
+        margin: 0;
+    }
+ .nav-items{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0rem;
+ }
+ .nav-item{
+    padding-left: 3.5rem;
+ }
+ .nav-item a{
+    padding: 1rem 0;
+    margin: 1rem 0;
+    font-size: .6rem;
+ }
+ img[alt=guy]{
+    margin-top: .1rem;
+    padding: 0 0 0 0rem;
+    width: 20rem;
+
+ }
+ .intro-text{
+    margin-top: -5rem;
+    width: 20rem;
+    z-index: 2;
+ }
+ .name-text{
+    padding-left: 2rem;
+    font-size: 1rem;
+ }
+ .designation{
+    padding-left: 2rem;
+    font-size: 1.5rem;
+ }
+ .description{
+    font-size: .5rem;
+    width: 17rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+ }
+ .about-me{
+    margin: 0 2rem;
+    padding: 0;
+    width: 5rem;
+    height: 2rem;
+    font-size: .4rem;
+ }
+ .backshadow{
+    margin-top: 22rem;
+    width: 30rem;
+ }
+ .cards{
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: -5rem;
+ }
+ .card{
+    flex-wrap: wrap;
+    margin-left: auto;
+    padding: 1rem;
+    width: 27rem;
+    height: 8rem;
+    font-size: .5rem;
+    margin-bottom: .5rem;
+ }
+ .textcard{
+    display: flex;
+    flex-direction: column;
+ }
+ .card-head{
+    margin-top: 1rem;
+ }
+ .card-des{
+    width: 7rem;
+ }
+ .know-more{
+    font-size: .6rem;
+ }
+ .arrow{
+    margin-top: .3rem;
+    transform: scale(.6);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div{
+    background: rgb(255, 255, 255);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div::after{
+    background: rgb(255, 255, 255);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div::before{
+    background: rgb(255, 255, 255);
+ }
+ .numbers{
+    margin-top: 8rem;
+    font-size: 1rem;
+    padding: 0;
+    margin-left: -20rem;
+ }
+ 
+ .bignum{
+    font-size: 5rem;
+ }
+ .small-cards{
+    margin: 0;
+    padding: 0;
+    margin-left: -7rem;
+ }
+ .card-pair{
+    margin-left: -2rem;
+    width: 30rem;
+ }
+
+.feature-head{
+    padding: 1rem;
+    width: 100%;
+}
+.textfea{
+    width: 20rem;
+}
+.feature-head button{
+    width: 7rem;
+    margin-top: 1.5rem;
+    font-size: .7rem;
+    
+}
+.projects{
+    padding: 0;
+}
+.project-pair{
+    flex-wrap: wrap;
+}
+.project{
+    transform: scale(.9);
+    margin-bottom: 0;
+}
+.ending-text{
+    margin: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.just-text{
+    width: 100%;
+    margin-bottom: -5rem;
+}
+body > div.main > div.ending-text > div > p{
+}
+.ending-text button{
+    width: 10rem;
+    margin-left: 4rem;
+    font-size: .8rem;
+    margin-bottom: 2rem;
+}
+.bot-nav-list{
+    margin: 4rem 1rem 4rem 1rem;
+    padding: 1rem 1rem;
+    width: 30rem;
+    justify-content: space-between;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    height: 7rem;
+    padding-bottom: 1rem;
+    padding-left: 7rem;
+    margin-bottom: -230rem;
+}
+.socials{
+    padding-left: 12rem;
+}
+}
+@media (min-width: 1920px){
+
+img[alt=logo]{
+    width: 18rem;
+}
+.navbar{
+    justify-content: space-between;
+}
+ .nav-items{
+    display: flex;
+    width: 80%;
+    margin-right: 20rem;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+ }
+ .nav-item{
+    height: 2rem;
+    width: 18rem;
+}
+.nav-item a{
+    font-size: 1.5rem;
+ }
+ img[alt=guy]{
+    width: 60rem;    
+}
+.intro-text{
+    width: 80%;
+    z-index: 2;
+    margin-top: 29rem;
+ }
+ .name-text{
+    padding-left: 2rem;
+    font-size: 3rem;
+ }
+ .designation{
+    padding-left: 1.5rem;
+    font-size: 6rem;
+ }
+ .description{
+    font-size: 2rem;
+    width: 60%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+ }
+ .about-me{
+    margin-left: 2rem;
+    font-size: 1rem;
+    width: 18rem;
+    padding: 2rem;
+ }
+ .backshadow{
+    margin-top: 62rem;
+    width: 80rem;
+    height: 70rem;
+ }
+ .cards{
+    padding: 0;
+    margin-top: 30rem;
+ }
+ .card{
+    justify-content: center;
+    margin-left: auto;
+    padding: 4rem;
+    width: 37rem;
+    height: 18rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+ }
+ .textcard{
+    display: flex;
+    flex-direction: column;
+ }
+ .card-head{
+    font-size: 2rem;
+ }
+ img[alt=note]{
+    width: 15rem;
+ }
+ img[alt=tab]{
+    width: 15rem;
+ }
+ img[alt=rule]{
+    width: 15rem;
+ }
+ .card-des{
+    width: 27rem;
+ }
+ .know-more{
+    font-size: 1rem;
+ }
+ .arrow{
+    margin-top: .5rem;
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div{
+    background: rgb(255, 255, 255);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div::after{
+    background: rgb(255, 255, 255);
+ }
+ body > div.main > div.cards > div.card.mid > div.textcard > div > div::before{
+    background: rgb(255, 255, 255);
+ }
+ .numbers{
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    font-size: 1rem;
+    padding: 0;
+ }
+ 
+ .bignum{
+    font-size: 12rem;
+ }
+ .numbers p{
+    font-size: 2.5rem;
+ }
+ .small-card{
+     width: 30rem;
+     height: 10rem;
+     font-size: 3rem;
+ }
+ .small-cards{
+    margin-left: 2rem;
+ }
+ body > div.main > div.numbers > div.bigtext > h3{
+    font-size: 2rem;
+ }
+ .card-pair{
+    width: 90rem;
+    height: 15rem;
+ }
+.feature{
+    width: 80%;
+    margin-left: -15rem;
+    padding-left: 0;
+}
+.feature-head{
+    padding: 2rem;
+    width: 100%;
+}
+.textfea{
+    font-size: 2rem;
+}
+.project-head{
+    font-size: 4rem;
+}
+.feature-head button{
+    width: 17rem;
+    min-height: 5rem;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;   
+}
+.projects{
+    padding: 0;
+}
+.project-pair{
+    justify-content: space-between;
+    margin: 9rem;
+}
+.project{
+    transform: scale(1.5);
+}
+.ending-text{
+    width: 110%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.just-text{
+    width: 50%;
+}
+.bigtext{
+    font-size: 3rem;
+}
+
+body > div.main > div.ending-text > div > p{
+    font-size: 1.5rem;
+}
+.ending-text button{
+    width: 15rem;
+    min-height: 5rem;
+    font-size: 1rem;
+    margin-left: -19rem;
+    margin-bottom: 2rem;
+}
+.bot-nav{
+    width: 70%;
+    height: 7rem;
+    margin-left: -20rem;
+}
+.bot-nav-list{
+    width: 100%;
+    height: 7rem;
+    margin: 4rem 1rem 4rem 0rem;
+    padding: 1rem 1rem;
+    justify-content: space-between;
+}
+.nav-it a{
+    font-size: 2rem;
+}
+footer{
+    height: 10rem;
+    padding-bottom: 1rem;
+    padding-left: 7rem;
+    margin-bottom: -80rem;
+}
+.logob img[alt=logo]{
+    width: 20rem;
+    height: 6rem;
+}
+.socials{
+    padding-left: 25rem;
+}
 }
