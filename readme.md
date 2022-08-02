@@ -3,7 +3,7 @@ This is a sample page. The website focuses on implementing the basics of HTML an
 
 ## Time taken
 
-6 hours + 5hours(responsive for 3 widths)
+11 hours = 6 hours + 5hours(responsive for 3 widths)
 
 ## Things Learned
 
