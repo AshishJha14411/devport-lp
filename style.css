@@ -141,6 +141,10 @@ img[alt=guy]{
     margin-right: 1rem;
     background-color: #1E1E1E;
 }
+.card:hover{
+    transition: ease-in-out .4s;
+    transform: scale(1.1);
+}
 img[alt=tab]{
     width: 10rem;
     margin-left: -2rem;
@@ -292,6 +296,10 @@ body > div.main > div.cards > div.card.mid > div.link > div::after{
     justify-content: center;
     background-color: #1E1E1E;
 }
+.small-card:hover{
+    transition: ease-in-out .4s;
+    transform: scale(1.1);
+}
 .num{
     color: #C91B28;
 }
@@ -326,13 +334,17 @@ body > div.main > div.cards > div.card.mid > div.link > div::after{
     margin-bottom: 3rem;
 }
 img[alt=first]{
-    height: 20rem;
-    width: 32rem;
+    height: 17rem;
+    width: 30rem;
 }
 
 .project-img{
-    padding: 3rem 1rem;
+    padding: 2rem 2rem;
     background-color: #1E1E1E;
+}
+img[alt=first]:hover{
+    transition: ease-in-out .4s;
+    transform: scale(1.07);
 }
 .project-name{
     padding: 1rem 0 1rem 0rem;
@@ -411,6 +423,10 @@ img[alt=yt]{
 }
 li a:hover{
     color: #C91B28;
+}
+.socials img:hover{
+    transition: ease-in-out .4s;
+    transform: scale(1.4);
 }
 button:hover{
     transition: ease-in .2s;
