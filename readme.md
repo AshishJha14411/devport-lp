@@ -3,12 +3,13 @@ This is a sample page. The website focuses on implementing the basics of HTML an
 
 ## Time taken
 
-11 hours = 6 hours + 5hours(responsive for 3 widths)
+12hours and 30 mins(including responsiveness, code cleanup and development)
 
 ## Things Learned
 
 - More on Relative units
 - More Responsive layouts
+- More Making shapes using CSS
 
 ### The deployed Version Link
 
