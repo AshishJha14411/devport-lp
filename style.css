@@ -510,7 +510,6 @@ button:hover{
  }
  .card{
     flex-wrap: wrap;
-    flex-direction: column;
     margin-left: auto;
     padding: 1rem;
     width: 17rem;
